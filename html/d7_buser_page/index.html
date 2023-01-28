@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/assets/favicon-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Viagens de ônibus com mais conforto pelo menor preço | Buser</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/buser-hr.svg" alt="Buser logo" />
+      <a href=""><i class="fa-solid fa-bell"></i> Entrar</a>
+    </header>
+    <div class="container">
+      <div class="text">
+        viagens de ônibus mais baratas que a passagem da rodoviária
+      </div>
+      <p>Sem taxas, com segurança e preço justo</p>
+      <div class="selection">
+        <form action="">
+          <div class="selection-row">
+            <label for="">Saindo de</label>
+            <input type="text" placeholder="São José dos Campos - SP" />
+          </div>
+          <div class="selection-row">
+            <label for="">Indo para</label>
+            <input type="text" placeholder="São Paulo - SP" />
+          </div>
+          <div class="selection-row">
+            <label for="">Data de ida</label>
+            <input
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              placeholder="Ida"
+            />
+          </div>
+          <div class="selection-row">
+            <label for="">Data de volta</label>
+            <input
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              placeholder="Volta"
+            />
+          </div>
+        </form>
+        <a class="search-btn" href=""
+          ><i class="fa-solid fa-magnifying-glass"></i>Buscar</a
+        >
+      </div>
+    </div>
+    <footer>
+      <ul class="rodape">
+        <li><i class="fa-solid fa-magnifying-glass"></i>Buscar</li>
+        <li><i class="fa-solid fa-bus"></i>Viagens</li>
+        <li><i class="fa-solid fa-wallet"></i>Carteira</li>
+        <li><i class="fa-solid fa-percent"></i>Promoções</li>
+        <li><i class="fa-solid fa-circle-question"></i>Ajuda</li>
+      </ul>
+    </footer>
+  </body>
+</html>
