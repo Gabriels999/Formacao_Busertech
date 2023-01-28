@@ -1,0 +1,62 @@
+body {
+  padding: 2%;
+}
+.page-header {
+  background-color: #b38463;
+  margin-top: 0;
+  padding: 10px 10px 10px 20px;
+}
+
+h1 > a,
+h2 > a {
+  color: #933d00;
+  font-family: "Lobster";
+  font-weight: 600;
+}
+a:hover {
+  color: #ff6a00;
+}
+.content {
+  margin-left: 40px;
+}
+h1,
+h2,
+h3,
+h4,
+.author {
+  font-family: "Lobster", cursive;
+}
+
+.date,
+.author {
+  color: #808080;
+}
+
+.save {
+  float: right;
+}
+
+.post-form textarea,
+.post-form input {
+  width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+  color: #ffffff;
+  float: right;
+  font-size: 26pt;
+  margin-right: 20px;
+  margin-top: 14px;
+}
+
+.post {
+  margin-bottom: 70px;
+  padding: 4%;
+}
+
+.post h2 a,
+.post h2 a:visited {
+  color: #db8f8f;
+}
