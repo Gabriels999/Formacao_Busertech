@@ -1,0 +1,254 @@
+:root {
+  --black: #000;
+  --primary: #34a02e;
+  --effects-green: ;
+  --effects-blue: rgb(62, 94, 198);
+  --effects-red: rgb(232, 51, 48);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+.space {
+  padding: 4% 0;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.viz-effect {
+  transition: ease-in-out 0.3s;
+}
+.border {
+  border-radius: 5px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-image: url("https://i.pinimg.com/originals/b4/e3/71/b4e371619042d1e80918d09904e90f7d.gif");
+  font-size: 1.2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2% 0;
+  box-shadow: 0 0 1em var(--black);
+  margin-bottom: 2%;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(20px);
+  font-size: 1.45rem;
+  z-index: 1;
+}
+header > div {
+  font-weight: 800;
+}
+.half1 {
+  color: var(--effects-red);
+}
+.half2 {
+  color: var(--effects-blue);
+}
+.navbar {
+  display: none;
+}
+.container {
+  padding: 3% 5%;
+  margin: 0 10%;
+  background-color: #fff;
+  box-shadow: 0 0 2px var(--black);
+}
+
+.about {
+  padding-top: 2%;
+}
+.about > .ball {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.about > .ball > img {
+  width: 25%;
+}
+
+.about > .ball:hover {
+  animation-name: spin;
+  animation-duration: 600ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about > img {
+  float: left;
+  width: 40%;
+  margin-right: 3%;
+  margin-bottom: 1%;
+}
+
+.about > a {
+  margin: 5% 0;
+  background-color: var(--primary);
+  border: 1px solid #fff;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.about > a:hover {
+  color: var(--hover-color);
+  background-color: var(--effects-green);
+  transform: scale(1.15, 1.15);
+  color: var(--black);
+  border: 1px solid var(--primary);
+}
+
+.timeline {
+  padding: 5% 0%;
+}
+.time-row {
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.tempoA {
+  padding: 3% 2%;
+  margin: 2% 0;
+  border: 2px dashed var(--primary);
+}
+.tempoA:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border: 2px dashed #fff;
+}
+.tempoB {
+  border: 2px dashed var(--primary);
+  padding: 3% 2%;
+}
+.tempoB:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border: 2px dashed #fff;
+}
+.year-right {
+  flex-direction: row-reverse;
+}
+.skill {
+  padding: 1.5% 0;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.skill-section > h3 {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+.skill > label {
+  font-size: large;
+}
+.skill > progress {
+  width: 100%;
+  accent-color: var(--primary);
+}
+.project-row > div > a > img {
+  width: 100%;
+  border: 1px solid #dbd7d7;
+  filter: grayscale(90%);
+}
+.project-row {
+  margin-bottom: 3%;
+}
+.project-row > div > a > img:hover {
+  transform: scale(1.2, 1.2);
+  filter: grayscale(0);
+}
+
+.img-buser {
+  width: 20% !important;
+  margin: 0 auto;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  backdrop-filter: blur(35px);
+  box-shadow: 0 0 1em var(--black);
+}
+footer > h3 {
+  padding-top: 2%;
+}
+.icon-field {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 5%;
+  margin-top: 3%;
+}
+.icon-field > li > a > img {
+  width: 100%;
+}
+.link > a {
+  padding: 3% 0 1%;
+  font-weight: 700;
+  color: #fff;
+}
+.link > a:hover {
+  color: var(--effects-red);
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    list-style: none;
+    gap: 12%;
+  }
+  .navbar > li > a:hover {
+    padding-bottom: 12px;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    border-radius: 3px;
+  }
+  .about > .ball {
+    display: flex;
+  }
+
+  .about > img {
+    width: 20%;
+  }
+  .about > a {
+    margin: 10% auto 0;
+    width: 40%;
+  }
+  .about > p {
+    padding-top: 10%;
+    line-height: 45px;
+  }
+  .timeline {
+    padding: 5%;
+  }
+  .project-row {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+  .icon-field > li > a > img {
+    width: 200%;
+  }
+}
